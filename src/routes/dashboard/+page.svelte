@@ -2,18 +2,12 @@
 	export let data;
 	const { budget } = data.user;
 	const alertColor = () => {
-		let breakpointOne = budget / 3;
-		let breakpointTwo = breakpointOne * 2;
-
-		if (data.weeklyTotal < breakpointOne) {
-			return 'alert-success';
-		} else if (
-			data.weeklyTotal > breakpointOne &&
-			data.weeklyTotal < breakpointTwo
-		) {
+		if (data.weeklyTotal >= (budget * 0.66).toFixed(2)) {
+			return 'alert-error';
+		} else if (data.weeklyTotal >= (budget * 0.33).toFixed(2)) {
 			return 'alert-warning';
 		} else {
-			return 'alert-error';
+			return 'alert-success';
 		}
 	};
 </script>
