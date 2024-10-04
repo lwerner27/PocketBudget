@@ -19,6 +19,7 @@
 						>
 							<li><a href="/dashboard">Dashboard</a></li>
 							<li><a href="/add/expense">Add Expense</a></li>
+							<li><a href="/account">My Account</a></li>
 							<li><a href="/logout">Logout</a></li>
 						</ul>
 					</details>
